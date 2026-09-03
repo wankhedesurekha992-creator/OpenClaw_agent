@@ -5,6 +5,7 @@ RUN npm install -g openclaw@latest
 ENV PORT=3000
 ENV OPENCLAW_GATEWAY_BIND=lan
 ENV OPENCLAW_GATEWAY_PORT=3000
+ENV NODE_OPTIONS="--max-old-space-size=256"
 
 EXPOSE 3000
 
